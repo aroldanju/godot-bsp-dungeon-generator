@@ -34,6 +34,9 @@ Optionally, you can modify the generation by creating a Parameters object.
     dungeon_generator.add_data(dungeon, 0, { "type": "start" }, data_parameters)
     dungeon_generator.add_data(dungeon, 1, { "type": "exit" }, data_parameters)
 
+## Credits
+Assets used in sample were made by [Kenney - 1 Bit Pack](https://www.kenney.nl/assets/1-bit-pack).
+
 ## License
 Addon under [GPLv3](https://github.com/aroldanju/godot-bsp-dungeon-generator/blob/main/LICENSE) license.
 
