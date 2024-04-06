@@ -27,7 +27,7 @@ class DataParameters extends RefCounted:
 
 
 class Parameters extends RefCounted:
-	var seed: int = 0
+	var seed: int = randi()
 	var size: Vector2i = Vector2i(50, 50)
 	var min_section_size: int = 4
 	var max_room_size: int = 8
@@ -99,7 +99,7 @@ var _random: RandomNumberGenerator = RandomNumberGenerator.new()
 var _sections: Array = []
 
 
-func generate(parameters: Parameters) -> Dungeon:
+func generate(parameters: Parameters = Parameters.new()) -> Dungeon:
 	print("[BSPDungeonGenerator::generate]: Seed = %d" % [parameters.seed])
 	
 	self._parameters = parameters
